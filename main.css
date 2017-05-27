@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-6, .col-12 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-6, .col-12 {
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+
+  /* 6 columns */
+  .col-6 {
+    width: 50%;
+
+  }
+
+  /* 12 columns */
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.rectangular {
+	border: 2px solid black;
+	height: 200px;
+	padding-left: 20px;
+}
+
+img {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.form {
+	margin-top: 30px;
+}
+
+.submit {
+	border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+background-color: #4285f4;
+color: #ecf0f1;
+transition: background-color .3s;
+}
