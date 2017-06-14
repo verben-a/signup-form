@@ -1,0 +1,20 @@
+{
+  "name": "signup-form",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "verben-a <alina.verbenchuk@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/verben-a/signup-form",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "^1.6.4"
+  }
+}

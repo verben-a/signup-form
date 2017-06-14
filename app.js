@@ -1,6 +1,5 @@
-var app = angular.module('myApp', []);
-
-app.directive('signUp', function() {
+angular.module('myApp', []).
+directive('signUp', function() {
 	return {
 		restrict: 'E',
 		require: '^ngModel',
